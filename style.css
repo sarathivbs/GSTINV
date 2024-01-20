@@ -1,0 +1,313 @@
+*{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background-image: url("img/logo.png");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:200px 200px;
+	background-position: 50% 50%;
+	height:100%;
+}
+h1
+{
+	text-align:center;
+}
+#menu
+{
+	background-color:lightblue;
+	width:100%;
+	height:100px;
+    margin: auto;
+    position: relative;
+}
+#menu ul li
+{
+	list-style: none;
+	float: left;
+	font-size: 16px;
+	padding:20px;
+	cursor: pointer;
+}
+#menu ul li:hover
+{
+	background-color:blue;
+	color:white;
+	font-weight:bold;
+}
+#dropdown 
+{
+  	position: relative;
+  	display: inline-block;
+}
+#dropdown-content 
+{
+  	display: none;
+  	position: absolute;
+  	background-color: #08c7fc;
+  	min-width: 100%;
+  	z-index: 1;
+  	left: 0;
+  	list-style: none;
+  	margin-top: 20px;
+}
+
+#dropdown-content li {
+  	color: black;
+  	padding: 0px 10px;
+  	text-decoration: none;
+  	display: block;
+}
+#dropdown-content li:hover {background-color: #ddd;}
+
+#dropdown:hover #dropdown-content {display: block;}
+
+#lMaster
+{
+	background-color: lightgrey;
+	display: none;
+	margin: 5% auto;
+	width: 80%;
+	height: auto;		
+}
+#lMaster button
+{
+	background-color: lightgrey;
+	color: blue;
+	margin: 10px 0;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+#lMaster button:hover
+{
+	background-color: black;
+	color: white;
+}
+#lMaster table
+{
+	border-collapse: collapse;
+	border:1px solid black;
+	margin: auto;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+#lMaster th
+{
+	border:1px solid black;
+	padding: 10px;
+}
+#lMaster td
+{
+	border:1px solid black;
+}	
+#newUser,#editUser
+{
+	background-color: lightgrey;
+	margin: 5% auto;
+	width: 80%;
+	height: 100%;
+	display: none;
+}
+#newUser form,#editUser form
+{
+	margin: auto;
+	display: block;
+	text-align: center;
+	height: 100%;
+	padding: 20px;
+	font-weight: bold;
+}
+#newUser table,#editUser table
+{
+	width: 100%;
+	margin: auto;
+}
+input[type=text],input[type=password]
+{
+	margin: 5px auto;
+	display: block;
+	width: 50%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	border-color: yellow;
+}
+input[type=submit],input[type=button]
+{
+	margin: 5px auto;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: yellow;
+	font-size: 16px;
+	background-color: black;
+	color: white;
+}
+footer
+{
+	margin-top: 100%;
+	position:fixed;
+	bottom:0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	padding: 20px 0;
+}
+#contact
+{
+	display: none;
+	margin: 20px auto 0 auto;
+	transition: 0.03s;
+}
+#payment,#paymentNew,#sale,#cuMaster
+{
+	
+	width: 100%;
+	display: none;
+}
+/*  ALDRIN CSS  */
+
+/*  ASTON CSS  */
+
+/*  ATHUL CSS  */
+
+/*  MAXIM CSS  */
+
+/*  SHRAVAN CSS */
+/*	payment css	*/
+    .header1,.data,.sales-btn{
+        background-color: #F0E13D;
+        font-family: sans-serif;
+        width:1000px;
+        
+        
+    }
+    .header1{
+        padding-bottom: 50px;
+        padding-top:5px;
+        text-align: center;
+        
+    }
+    .sales-btn1{
+        float:right;
+    }
+    .sales-btn1 button,.data button{
+        background-color: #45ED17;
+        font-family: sans-serif;
+        /*border:none;*/
+        border-radius: 2px;
+        width:100px;
+        height: 30px;
+    }
+    
+    .data #customer{
+        height:20px;
+        width: 100%;
+    }
+    
+/*	paymentnew css	*/
+	.header1,.sales-btn1{
+        background-color: #F0E13D;
+        
+    }
+    .header1{
+        padding-bottom: 45px;
+        padding-top:5px;
+        text-align: center;
+        
+    }
+    .sales-btn1{
+        float:right;
+    }
+   
+    #sales{
+        background-color: #45ED17;
+        font-family: sans-serif;
+        /*border:none;*/
+        border-radius: 2px;
+        width:100px;
+        height: 30px;
+    }
+    #close{
+        background-color: #45ED17;
+        font-family: sans-serif;
+        /*border:none;*/
+        border-radius: 2px;
+        width:100px;
+        height: 30px;
+    }
+    .form .form-left{
+        float:left;
+        text-align: justify;
+        padding-top: 10px;
+    }
+    .form .form-right{
+        float:right;
+        text-align: justify;
+        padding-right: 100px;
+        padding-top: 10px;
+    }
+    #vendor{
+        width:500px;
+        height:20px;
+    }
+    #invoice1{
+        width:500px;
+        height:20px;
+    }
+    #vendorcode{
+        width:250px;
+        height: 20px;
+    }
+    #address,#remarks{
+        width:250px;
+        height: 100px;
+    }
+    #total{
+        width:250px;
+        height: 20px;
+    }
+    #payment{
+        width:250px;
+        height: 20px;
+    }
+    #paid{
+        width:250px;
+        height: 20px;
+    }
+    #balance{
+        width:250px;
+        height: 20px;
+    }
+    #pdate{
+        width:250px;
+        height: 20px;
+    }
+    .tablesalesnew{
+        left: 0;
+        padding-top: 7%;
+        position: fixed;
+    }
+
+/*	sales CSS 	*/
+    .header2{
+        background-color: #F0E13D;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-family: sans-serif;
+    }
+    #customer{
+        width:500px;
+        height:20px;
+    }
+    .header2 button{
+        border-radius: 2px;
+        width:100px;
+        height: 30px;
+    }

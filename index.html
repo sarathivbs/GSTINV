@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GST Invoicing</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+	    <div id="menu">
+		    <h1>GST Invoicing</h1>
+		    <ul>
+			    <li id="dropdown"><a>Master
+			    <ul id="dropdown-content">
+			        <li><a onclick="showLoginMaster(); ">Login Master</a></li>
+			        <li><a onclick="showCMaster();">Company Master</a></li>
+			        <li><a onclick="showCuMaster();">Customer Master</a></li>
+			        <li><a onclick="showIMaster();">Item Master</a></li>
+			        <li><a onclick="showYearMaster();">Year Master</a></li>
+			        <li><a onclick="">Backup Database</a></li>
+			    </ul></a>
+			    </li>
+			    <li><a>Invoicing</a></li>
+			    <li><a>Reports</a></li>
+			    <li><a>Change Password</a></li>
+			    <li><a onclick="showPayment();">Payments</a></li>
+			    <li><a>Exit</a></li>
+		    </ul>
+	    </div>
+	    
+	</header>
+	<div id="lMaster">
+		<h1>Login Master Setup</h1>
+		<button type="button" onclick="showNewUser();">New</button>
+		<button type="button" id="edit" onclick="showEditUser();">Edit</button>
+		<button type="button" id="delete" onclick="">Delete</button>
+		<button type="button" onclick="close('lMaster');">Close</button>
+		<table>
+			<th>LoginID</th>
+			<th>UserName</th>
+			<th>UserType</th>
+			<th>E-Mail</th>
+			<th>Mobile No.</th>
+
+			<tr>
+			<td>php</td>
+			<td>php</td>
+			<td>php</td>
+			<td>php</td>
+			<td>php</td>
+
+			</tr>
+		</table>
+	</div>
+
+	<div id="newUser">
+	<form>
+  		<h1>Adding New User</h1>
+  		<table>
+ 			<th></th>
+ 			<th></th>
+ 			<tr>
+ 				<td>USER NAME:</td>
+ 				<td><input type="text" name="firstname" id="firstname" placeholder="firstname"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>USER ID:</td>
+ 				<td><input type="text" name="lastname" id="lastname" placeholder="userid"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>PASSWORD:</td>
+ 				<td><input type="password" name="password" id="password" placeholder="enter password"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>CONFIRM PASSWORD:</td>
+ 				<td><input type="password" name="password" id="password" placeholder="enter password"></td>
+ 			</tr>
+ 			
+ 			<tr>
+ 				<td>MAIL ID:</td>
+ 				<td><input type="text" placeholder="mail id" name="mail" ></td>
+ 			</tr>
+  			<tr>
+ 				<td>Mobile  no:</td>
+ 				<td><input type="text" placeholder="mobile no" name="username" id="username"></td>
+ 			</tr>
+ 			<tr>
+ 				<td><input type="submit" value="Save" id="register" > </td>
+ 				<td><input type="button" value="Cancel" onclick="document.getElementById('newUser').style.display='none';"> </td>
+ 			</tr>
+		</table>
+	</form>
+
+	</div>
+
+	<div id="editUser">
+	<form>
+  		<h1>Editing User Details</h1>
+  		<table>
+ 			<th></th>
+ 			<th></th>
+ 			<tr>
+ 				<td>USER NAME:</td>
+ 				<td><input type="text" name="firstname" id="firstname" placeholder="firstname"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>USER ID:</td>
+ 				<td><input type="text" name="lastname" id="lastname" placeholder="userid"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>PASSWORD:</td>
+ 				<td><input type="password" name="password" id="password" placeholder="enter password"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>CONFIRM PASSWORD:</td>
+ 				<td><input type="password" name="password" id="password" placeholder="enter password"></td>
+ 			</tr>
+ 			
+ 			<tr>
+ 				<td>MAIL ID:</td>
+ 				<td><input type="text" placeholder="mail id" name="mail" ></td>
+ 			</tr>
+  			<tr>
+ 				<td>Mobile  no:</td>
+ 				<td><input type="text" placeholder="mobile no" name="username" id="username"></td>
+ 			</tr>
+ 			<tr>
+ 				<td><input type="submit" value="Save" id="register" > </td>
+ 				<td><input type="button" value="Cancel" onclick="document.getElementById('editUser').style.display='none';"> </td>
+ 			</tr>
+		</table>
+	</form>
+
+	</div>
+	<!--athul --->
+	<div id="cuMaster" style="background-color: blue;">
+	
+		<table>
+			<tr><p style="font-size: 44px;padding-left:500px;height:100px;"> Customer Master Setup</p>
+		<button style='color:red; height:30px;background-color: yellow;width:10%;' type="button" onclick="showCuNew();">New </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+		<button style='color:red; height:30px;width:10%;background-color: yellow;' type="button" onclick="showCuEdit();">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+
+		<button style='color:red; height:30px;width:10%;background-color: yellow;' type="button" onclick="showCuDelete();"> Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+		<button style='color:red; height:30px;width:10%;background-color: yellow;' type="button" onclick="close('cuMaster99');">Close</button>&nbsp;&nbsp;&nbsp;&nbsp; </tr>
+		</table>
+		
+	</div>
+
+	<!--shravan-->
+	<div id="payment">
+		<div class="header1">
+        	<h1>Payment Details-Sales</h1>
+    	</div>
+    	<div class="sales-btn1">
+        	<button type="button" onclick="showSale();">Sales</button>
+    	</div>
+    	<div class="data" align="center">
+        <form>
+            Customer Name
+            <input list="customers" name="customer" id="customer">
+            <datalist id="customers"></datalist>&nbsp;&nbsp;&nbsp;
+            <button>Search</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" onclick="showNewPayment();">New</button>
+            <br>
+            INVOICE NUMBERS
+            <input list="invoicenos" name="invoiceno" id="invoice">
+            <datalist id="invoicenos"></datalist>
+
+		</form>
+		<table>
+			<thead>
+				<th>Invoice Number</th>
+				<th>Customer Number</th>
+				<th>Total</th>
+			</thead>
+		</table>
+    	</div>
+	</div>
+	<div id="paymentNew">
+		<div class="header1" align="center">
+        	<h1>Payment Details-Sales</h1>
+        	<div class="sales-btn1">
+        		<button id="sales">Sales</button>
+        	</div>
+    	</div>
+	    <div class="form">
+	    <form>
+	        <div class="form-left">
+	        Vendor Name
+	        <input list="vendors" name="vendor" id="vendor">
+	        <datalist id="vendors"></datalist><br><br>
+	        Invoice No
+	        <input id="invoice1" name="invoice" type="number">
+	        </div>
+	        <div class="form-right">
+	            Vendor Code
+	            <input id="vendorcode" name="vendorcode" type="number">
+	            <br><br>
+	            Address
+	            <input id="address" name="address" type="text">
+	            <br>
+	            <br>
+	            Grand Total
+	            <input id="total" name="total" type="number">
+	            <br>
+	            <br>
+	            Last Payment
+	            <input id="payment" name="payment" type="number">
+	            <br>
+	            <br>
+	            Amount Paid
+	            <input id="paid" name="paid" type="number">
+	            <br>
+	            <br>
+	            Balance
+	            <input id="balance" name="balance" type="number">
+	            <br>
+	            <br>
+	            Paid Date
+	            <input id="pdate" name="pdate" type="date">
+	            <br>
+	            <br>
+	            Remarks
+	            <input id="remarks" name="remarks" type="text">
+	            <br>
+	            <br>
+	            <button id="sales">Save</button>
+	            <button id="close">Close</button>
+
+	        </div>
+	    </form>
+		</div>
+		<div class="tablesalesnew">
+			<table>
+				<thead>
+					<th>Invoice No</th>
+					<th>Payments Date</th>
+					<th>Payment</th>
+					<th>Balance</th>
+				</thead>
+			</table>
+		</div>
+	</div>
+	<div id="sale">
+		<div class="header2" align="center">
+	        <h1>Sales Report</h1>
+	        <form>
+	            Customer Name
+	            <input list="customers" name="customer" id="customer">
+	            <datalist id="customers"></datalist><br><br>
+	            From
+	            <input id="fromdate" name="fromdate" type="date">&nbsp;&nbsp;&nbsp;
+	            To &nbsp;
+	            <input id="todate" name="todate" type="date">&nbsp;&nbsp;
+	            <button>Submit</button>
+	            <button>Excel</button>
+	            <button>Close</button>
+	        </form>
+	    </div>
+	</div>
+
+	<div>
+		<form method="post" style="padding:50px;float:right;background-color: white;width:300px;margin-top:30%;">
+		  <p style="font-size:14px;background-color:yellow;">REGISTER</p>
+		 USER ID:<br>
+		  <input type="text" name="username" id="firstname" placeholder="firstname">
+		  <br>
+		 
+		 PASSWORD:<br>
+		  <input type="password" name="password" id="password" placeholder="enter password">
+
+		  <br>
+
+			
+		<input type="SUBMIT" value="Register" id="register"> 
+		<input type="SUBMIT" id="cancel" value="cancel">
+		</form>
+	</div>
+
+
+	<footer>
+		<div>
+			&copy; -2017 ALL Rights reserved for VITVARA Technologies
+		</div>
+		<button type="button" id="button1" onclick="showContact();">Contact us</button>
+
+		<div id="contact">
+			
+			<u>Address:</u>Vitvara Techologies <br/>
+		#3-25/7, Vinayaka Udaya nagar <br/>
+		Behind KPT Junction, Airport Rd,<br/>
+		Kadri Hills, Mangaluru, Karnataka 575004<br/>
+				<u>E-mail:</u>support@vitvara.com<br/>
+				<u>Phone:</u> <br/>
+					+91 854 8866 224<br/>
+					+91 854 8866 226<br/>
+					+91 854 8866 227
+		</div>
+	</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
